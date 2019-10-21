@@ -1,0 +1,41 @@
+{
+  "name": "random-access-storage-from",
+  "version": "0.0.0",
+  "description": "Creates a RandomAccessStorage instance from a given input.",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc tape test.js"
+  },
+  "keywords": [
+    "random",
+    "access",
+    "storage",
+    "from",
+    "input"
+  ],
+  "author": "Joseph Werle <joseph.werle@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "debug": "^4.1.1",
+    "is-browser": "^2.1.0",
+    "random-access-file": "^2.1.3",
+    "random-access-http": "^2.0.1",
+    "random-access-memory": "^3.1.1",
+    "random-access-storage": "^1.4.0",
+    "random-access-web": "^2.0.3"
+  },
+  "devDependencies": {
+    "data-urls": "^1.1.0",
+    "nyc": "^14.1.1",
+    "serve-handler": "^6.1.2",
+    "tape": "^4.11.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/little-core-labs/random-access-storage-from.git"
+  },
+  "bugs": {
+    "url": "https://github.com/little-core-labs/random-access-storage-from/issues"
+  },
+  "homepage": "https://github.com/little-core-labs/random-access-storage-from#readme"
+}
