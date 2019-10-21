@@ -45,7 +45,7 @@ instances to the caller based on input. By default file based input
 calls `providers.file()`, HTTP URL based input calls `providers.http()`,
 and memory based input calls `providers.memory()`.
 
-_See [Custom Providers][#custom-providers] for more information on
+_See [Custom Providers](#custom-providers) for more information on
 creating and handling custom input._
 
 <a name="from-filename" /></a>
@@ -227,11 +227,11 @@ const store = from(ram())
 Top level object that defines built-in and custom provider functions for
 handling [file][from-providers-file], [memory][from-providers-memory],
 [http][from-providers-http], and [custom URL protocol
-handlers][#custom-providers].
+handlers)(#custom-providers).
 
 Built-in providers, like [file][from-providers-file],
 [memory][from-providers-memory], and [http][from-providers-http] are
-used based on the input given to the [`from()`][#api] function.
+used based on the input given to the [`from()`](#api) function.
 
 This section documents the providers and the modules they are based on.
 
@@ -242,8 +242,8 @@ creating and handling custom input._
 ### `from.providers.file`
 
 This provider handles file based input when `from(...)` is called with
-[`from(filename[, opts])`][#from-filename] or
-[`from(url[,opts])`][#from-url] where the protocol in `url` is `file:`.
+[`from(filename[, opts])`](#from-filename]) or
+[`from(url[,opts])`](#from-url) where the protocol in `url` is `file:`.
 
 This provider uses the [random-access-file][raf] module.
 
@@ -251,7 +251,7 @@ This provider uses the [random-access-file][raf] module.
 ### `from.providers.http`
 
 This provider handles file based input when `from(...)` is called with
-[`from(url[,opts])`][#from-url] where the protocol in `url` is `http:`
+[`from(url[,opts])`](#from-url) where the protocol in `url` is `http:`
 or `https:`.
 
 This provider uses the [random-access-http][rah] module.
@@ -260,8 +260,8 @@ This provider uses the [random-access-http][rah] module.
 ### `from.providers.memory`
 
 This provider handles memory based input when `from(...)` is called with
-[`from(string)`][#from-string], [`from(buffer)`][#from-buffer],
-[`from(arrayBuffer)`][#from-arraybuffer]
+[`from(string)`](#from-string), [`from(buffer)`](#from-buffer),
+[`from(arrayBuffer)`](#from-arraybuffer)
 
 This provider uses the [random-access-memory][ram] module.
 
