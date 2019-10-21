@@ -1,7 +1,7 @@
 random-access-storage-from
 ==========================
 
-> Creates a [RandomAccessStorage][ras] instance from a given input.
+> Creates a [random-access-storage][ras] instance from a given input.
 
 <a name="installation" /></a>
 ## Installation
