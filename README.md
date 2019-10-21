@@ -53,7 +53,7 @@ creating and handling custom input._
 
 Create a [random-access-storage][ras] instance from `filename` and
 `opts` if `filename` points to a file. `opts` is passed directly to
-the [`providers.file(filename, opts)`][from-providers-file] function.
+the [`providers.file(filename, opts)`](#from-providers-file) function.
 Callers should set `opts.file` to `true` to **create a new file** or if
 the calling environment is in a web browser.
 
@@ -71,13 +71,13 @@ Create a [random-access-storage][ras] instance from `url` and
 `opts`.
 
 If `url` points to a HTTP resource, `url` and `opts` are passed directly to
-the [`providers.http(url, opts)`][from-providers-http] function. Callers
+the [`providers.http(url, opts)`](#from-providers-http) function. Callers
 should ensure correct [CORS][cors] headers are set if the calling
 environment is in a web browser.
 
 If `url` contains the `file:` protocol and the `pathame` points to a local
 file, `pathname` and `opts` are passed directly to the
-[`providers.file(url, opts)`][from-providers-file] function.
+[`providers.file(url, opts)`](#from-providers-file) function.
 
 ```js
 const file = from('https://example.com/example.txt')
@@ -100,7 +100,7 @@ file.read(0, 4, (err, buf) => {
 
 Create a [random-access-storage][ras] instance from `string` and
 optional `encoding`. The
-[`providers.memory(buffer)`][from-providers-memory] function is
+[`providers.memory(buffer)`](#from-providers-memory) function is
 called with `string` converted to a `Buffer` with `encoding`.
 
 ```js
@@ -123,7 +123,7 @@ store.read(0, 5, (err, buf) => {
 ### `from(buffer)`
 
 Create a [random-access-storage][ras] instance from `buffer`.
-The [`providers.memory(buffer)`][from-providers-memory] function is
+The [`providers.memory(buffer)`](#from-providers-memory) function is
 called with `buffer`.
 
 ```js
@@ -225,17 +225,17 @@ const store = from(ram())
 ### `from.providers`
 
 Top level object that defines built-in and custom provider functions for
-handling [file][from-providers-file], [memory][from-providers-memory],
-[http][from-providers-http], and [custom URL protocol
+handling [file](#from-providers-file), [memory](#from-providers-memory),
+[http](#from-providers-http), and [custom URL protocol
 handlers)(#custom-providers).
 
-Built-in providers, like [file][from-providers-file],
-[memory][from-providers-memory], and [http][from-providers-http] are
+Built-in providers, like [file](#from-providers-file),
+[memory](#from-providers-memory), and [http](#from-providers-http) are
 used based on the input given to the [`from()`](#api) function.
 
 This section documents the providers and the modules they are based on.
 
-_See [Custom Providers][custom-providers] for more information on
+_See [Custom Providers](#custom-providers) for more information on
 creating and handling custom input._
 
 <a name="from-providers-file" /></a>
@@ -329,5 +329,4 @@ MIT
 [cors]: https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
 [data-urls]: https://github.com/jsdom/data-urls
 [data-uris]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs
-[buffer-from-arraybuffer]:
-https://nodejs.org/api/buffer.html#buffer_class_method_buffer_from_arraybuffer_byteoffset_length
+[buffer-from-arraybuffer]: https://nodejs.org/api/buffer.html#buffer_class_method_buffer_from_arraybuffer_byteoffset_length
