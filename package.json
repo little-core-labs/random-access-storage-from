@@ -1,6 +1,6 @@
 {
   "name": "random-access-storage-from",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Creates a RandomAccessStorage instance from a given input.",
   "main": "index.js",
   "scripts": {
